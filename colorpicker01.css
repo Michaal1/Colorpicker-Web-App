@@ -1,0 +1,145 @@
+* {
+	/*outline: red solid;*/
+}
+
+body{
+	width: 100%;
+	height: 100vh;
+	font-family: 'Poppins', sans-serif;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+#body {
+	position: fixed;
+	top: 0%;
+	right: 0%;
+	display: block;
+	width: 100%;
+	height: 100vH;
+}
+#heading {
+	position: absolute;
+	left: 50%;
+	top:70px;
+	transform: translateX(-50%);
+	text-transform: uppercase;
+	font-size: 60px;
+	color: #121212;
+	text-align: center;
+}
+#write-place {
+	justify-content: space-between;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: 8px;
+	background: rgba(10, 10, 10,0.78);
+	width: 180px;
+}
+#code {
+	pointer-events: none;
+	color: #d9d9d9;
+	display: block;
+	text-align: center;
+	margin: 0 auto ;
+	z-index: 3;
+	width: 180px;
+	padding: 15px 0 10px;
+	font-weight: bold;
+	font-size: 15px;
+}
+#click-info {
+	pointer-events: none;
+	color: #d9d9d9;
+	margin: 3px 0 0;
+	padding: 0 0 14px;
+	font-size: 12px;
+	color: white;
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+.object {
+	position: absolute;
+	/*z-index: 1;*/
+	height: 100vh;
+	/*width: 30%;*/
+}
+.codeBox {
+	display: block;
+	z-index: 4;
+	justify-content: space-between;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: 8px;
+	background: rgba(10, 10, 10,0.78);
+	height: 85px;
+	width: 180px;
+	max-width: 92%;
+}
+.colorCode{
+	text-align: center;
+	pointer-events: none;
+	color: #d9d9d9;
+	display: block;
+	text-align: center;
+	margin: 0 auto ;
+	z-index: 3;
+	width: 100%;
+	padding: 8% 0/*15px*/ 6% ;
+	font-weight: bold;
+	font-size: 15px;
+}
+.settBox {
+	display: flex;
+	justify-content: space-around;
+	position: absolute;
+	bottom: 15vh;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	height: 100px;
+}
+.cross {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-56%,50%);
+	width: 40px;
+	height: 40px;
+}
+
+.leftLine {
+	z-index: 5;
+	width: 32px;
+	height: 5px;
+	background: #000;
+	border-radius: 2px ;
+	transform: rotate(45deg) translate(16px,10px);
+}
+.rightLine {
+	z-index: 5;
+	width: 32px;
+	height: 5px;
+	border-radius: 2px ;
+	background: #000;
+	transform: rotate(-45deg) translate(-6px,12px);
+
+}
+.copy {
+	color:#d9d9d9;
+	cursor: pointer;
+	font-size: 13px;;
+}
+/*span {
+	margin: 5px 48px;
+	font-size: 18px;
+	background: rgb();
+}*/
